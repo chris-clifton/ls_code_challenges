@@ -9,7 +9,7 @@ class Series
   end
 
   def slices(number)
-    raise ArgumentError, 'n is too big for the string.' if number > @numbers.size
+    raise ArgumentError, 'Number is too big for the string.' if number > @numbers.size
     @numbers.each_cons(number).to_a
   end
 end
